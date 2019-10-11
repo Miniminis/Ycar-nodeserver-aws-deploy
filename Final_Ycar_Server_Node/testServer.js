@@ -3,12 +3,8 @@ var http = require('http').createServer(app);
 var io = require('socket.io')(http);
 
 app.get('/', function(req, res){
-    //res.send('<h1>안녕하세요 "/" 경로 입니다.</h1>');
+    res.sendFile(__dirname+'/driver03.html');
   });
-
-app.get('/driver', function(req, res){
-    res.sendFile('driver03.html');
-});
   
 io.on('connection', function(socket){
     console.log('user connected ::', socket.id);
