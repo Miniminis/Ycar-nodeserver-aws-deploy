@@ -15,5 +15,5 @@ io.on('connection', function(socket){
 });
 
 http.listen(3000, function(){
-    console.log('연차 노드 서버 연결 완료');
+    console.log('연차 노드 테스트 서버 연결했습니다.');
 })
